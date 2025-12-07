@@ -4,16 +4,16 @@ Utility Tool
 This Program upon logoff of user will perform:
 
 Clears Edge browser:
-History 
-Cache
-Code Cache
+History, 
+Cache,
+Code Cache,
 Cookies
 
 Clears Chrome browser 
-History
-Cache
-Code Cache
-Cookies
+History,
+Cache,
+Code Cache,
+Cookies,
 
 Deletes Files in:
 Downloads Folder
