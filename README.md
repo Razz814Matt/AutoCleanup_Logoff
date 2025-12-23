@@ -25,3 +25,5 @@ Deletes Files in:
 #Admin level perms
 
 Will be Embedded in a full suite program here soon!!!!!!
+
+Version 0.0.0.1
