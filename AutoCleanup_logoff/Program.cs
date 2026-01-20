@@ -2,10 +2,15 @@
 using System.IO;
 using System.Collections.Generic;
 using System;
-using System.Diagnostics; // Required for Debug.WriteLine (optional, but useful)
+using System.Diagnostics;
+
+
 
 namespace AutoCleanup_logoff
 {
+    //---------------------
+    //------RazCMR---------
+    //---------------------
     public static class Cleaner
     {
         // Path for logging errors when running at logoff
@@ -33,7 +38,9 @@ namespace AutoCleanup_logoff
             }
         }
 
+        //-------------------------------------
         // --- Downloads Folder Logic ---
+        //-------------------------------------
 
         [SupportedOSPlatform("windows10.0.19041.0")]
         // FIX 1: Added 'static'
@@ -78,7 +85,9 @@ namespace AutoCleanup_logoff
             }
         }
 
+        // -------------------------------------
         // --- Chrome History/Cache Logic ---
+        // -------------------------------------
 
         [SupportedOSPlatform("windows10.0.19041.0")]
         // FIX 1: Added 'static'
@@ -132,7 +141,9 @@ namespace AutoCleanup_logoff
             }
         }
 
+        // -------------------------------------
         // --- EDGE HISTORY/CACHE LOGIC ---
+        // -------------------------------------
 
         [SupportedOSPlatform("windows10.0.19041.0")]
         // FIX 1: Added 'static'
@@ -192,6 +203,7 @@ namespace AutoCleanup_logoff
     public class Program
     {
         // This is the entry point that the Scheduled Task will run
+        [SupportedOSPlatform("windows10.0.19041.0")]
         public static void Main(string[] args)
         {
             Cleaner.ClearAllData();
