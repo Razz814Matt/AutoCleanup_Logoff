@@ -24,6 +24,7 @@ Deletes Files in:
 
 #Admin level perms
 
+This Is build for Coffee / Internet Cafe's
 Will be Embedded in a full suite program here soon!!!!!!
 
 Version 0.0.0.1
